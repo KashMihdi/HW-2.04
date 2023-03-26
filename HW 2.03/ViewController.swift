@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    @IBOutlet weak var viewField: UIView!
+    @IBOutlet weak var colorFieldView: UIView!
     
     @IBOutlet weak var redLabelValue: UILabel!
     @IBOutlet weak var greenLabelValue: UILabel!
@@ -20,23 +20,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueSliderValue: UISlider!
     
     
-    @IBAction func redSliderChanged(_ sender: UISlider) {
-        setColorView(sender: sender)
+    @IBAction func changedSlidersValue(_ sender: UISlider) {
+        setColorViews(sender: sender)
     }
     
-    private func setColorView(sender: UISlider) {
+    private func setColorViews(sender: UISlider) {
         switch sender.tag {
-        case 1:
-            redLabelValue.text =  sender.value.formatted(.number.precision(.fractionLength(2)))
-            viewField.backgroundColor = .init(
+        case 0:
+            redLabelValue.text = String(format: "%.2f", sender.value)
+            colorFieldView.backgroundColor = .init(
                 red: CGFloat(sender.value),
                 green: CGFloat(greenSliderValue.value),
                 blue: CGFloat(blueSliderValue.value),
                 alpha: 1
             )
-        case 2:
+        case 1:
             greenLabelValue.text = String(format: "%.2f", sender.value)
-            viewField.backgroundColor = .init(
+            colorFieldView.backgroundColor = .init(
                 red: CGFloat(redSliderValue.value),
                 green: CGFloat(sender.value),
                 blue: CGFloat(blueSliderValue.value),
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             )
         default:
             blueLabelValue.text = String(format: "%.2f", sender.value)
-            viewField.backgroundColor = .init(
+            colorFieldView.backgroundColor = .init(
                 red: CGFloat(redSliderValue.value),
                 green: CGFloat(greenSliderValue.value),
                 blue: CGFloat(sender.value),
@@ -52,7 +52,5 @@ class ViewController: UIViewController {
             )
         }
     }
-    
-    
-    
+
 }
