@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="dark"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="20" y="99" width="390" height="233"/>
                                 <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NyZ-k0-CtS">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NyZ-k0-CtS">
                                 <rect key="frame" x="20" y="382" width="390" height="102"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nva-Sh-vtD">
@@ -48,7 +48,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c9t-Lu-6IV">
-                                        <rect key="frame" x="61" y="0.0" width="52" height="102"/>
+                                        <rect key="frame" x="65" y="0.0" width="52" height="102"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="0.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ls2-av-aSP">
                                                 <rect key="frame" x="0.0" y="0.0" width="52" height="29.333333333333332"/>
@@ -74,27 +74,27 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="csi-Ip-Vqy">
-                                        <rect key="frame" x="114" y="0.0" width="276" height="102"/>
+                                        <rect key="frame" x="122" y="0.0" width="268" height="102"/>
                                         <subviews>
                                             <slider opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-d9-rOm">
-                                                <rect key="frame" x="-2" y="0.0" width="280" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="272" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
                                                     <action selector="redSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GvS-2c-QPn"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5rj-y2-2BS">
-                                                <rect key="frame" x="-2" y="36" width="280" height="31"/>
+                                                <rect key="frame" x="-2" y="36" width="272" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
-                                                    <action selector="greenSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SEj-xB-18m"/>
+                                                    <action selector="redSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="lwD-55-BU2"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oMN-wn-gO3">
-                                                <rect key="frame" x="-2" y="72" width="280" height="31"/>
+                                                <rect key="frame" x="-2" y="72" width="272" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <connections>
-                                                    <action selector="blueSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="C6U-A2-aMZ"/>
+                                                    <action selector="redSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ajx-7J-PVj"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
