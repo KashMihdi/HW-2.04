@@ -76,25 +76,25 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="csi-Ip-Vqy">
                                         <rect key="frame" x="122" y="0.0" width="268" height="102"/>
                                         <subviews>
-                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-d9-rOm">
+                                            <slider opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-d9-rOm">
                                                 <rect key="frame" x="-2" y="0.0" width="272" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
-                                                    <action selector="redSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GvS-2c-QPn"/>
+                                                    <action selector="changedSlidersValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="nxj-p1-DJ0"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5rj-y2-2BS">
+                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5rj-y2-2BS">
                                                 <rect key="frame" x="-2" y="36" width="272" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
-                                                    <action selector="redSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="lwD-55-BU2"/>
+                                                    <action selector="changedSlidersValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Om-sc-QtL"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oMN-wn-gO3">
+                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oMN-wn-gO3">
                                                 <rect key="frame" x="-2" y="72" width="272" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                 <connections>
-                                                    <action selector="redSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ajx-7J-PVj"/>
+                                                    <action selector="changedSlidersValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rfo-9N-9Qx"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -117,11 +117,11 @@
                     <connections>
                         <outlet property="blueLabelValue" destination="SbH-v5-1he" id="Bou-QM-yX9"/>
                         <outlet property="blueSliderValue" destination="oMN-wn-gO3" id="XCJ-WS-JVG"/>
+                        <outlet property="colorFieldView" destination="iio-5e-8pq" id="FuP-6k-pY6"/>
                         <outlet property="greenLabelValue" destination="pIg-GF-YRs" id="u5z-41-ZCg"/>
                         <outlet property="greenSliderValue" destination="5rj-y2-2BS" id="Qqo-8G-Oyj"/>
                         <outlet property="redLabelValue" destination="ls2-av-aSP" id="Iv2-Dk-2Ok"/>
                         <outlet property="redSliderValue" destination="bBH-d9-rOm" id="TcO-zg-Lh0"/>
-                        <outlet property="viewField" destination="iio-5e-8pq" id="FuP-6k-pY6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
